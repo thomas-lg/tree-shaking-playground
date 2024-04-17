@@ -1,0 +1,22 @@
+{
+  "name": "date-fns-pack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "npm run build && npm run stats",
+    "start": "node ./dist/main.js",
+    "build": "webpack --profile --json > stats.json",
+    "stats": "webpack-bundle-analyzer stats.json --port 4300"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^3.6.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.52.0",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.8.0"
+  }
+}

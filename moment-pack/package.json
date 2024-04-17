@@ -1,0 +1,22 @@
+{
+  "name": "moment-pack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "npm run build && npm run stats",
+    "start": "node ./dist/main.js",
+    "build": "webpack --profile --json > stats.json",
+    "stats": "webpack-bundle-analyzer stats.json --port 4200"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.30.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.52.0",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.8.0"
+  }
+}
